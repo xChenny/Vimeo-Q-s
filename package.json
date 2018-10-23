@@ -1,0 +1,18 @@
+{
+  "name": "vimeo-coding-challenge",
+  "version": "1.0.0",
+  "description": "We have a client with a huge library of instructional videos and they really want to add supplemental information to users as they are watching the users.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.4",
+    "pug": "^2.0.3"
+  }
+}
