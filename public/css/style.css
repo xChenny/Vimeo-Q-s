@@ -9,9 +9,24 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+
+/* Player View */
+
 .view--player {
     display: grid;
     grid-template-columns: 8fr 2fr;
 }
-
+#player {
+    position: relative;
+}
+#cue--background {
+    /* background: rgba(0,0,0,0); */
+    background-color: red;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
