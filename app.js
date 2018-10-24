@@ -30,9 +30,19 @@ app.get("/search", (req, res) => {
   });
 });
 
+// default player route
 app.get("/player", (req, res) => {
   res.render("index", {
-    view: "player"
+    view: "player",
+    defaultPlayer: true
+  });
+});
+
+// search player route
+app.get("/player/:id", (req, res) => {
+  res.render("index", {
+    view: "player",
+    defaultPlayer: false
   });
 });
 

@@ -16,3 +16,8 @@ include ../partials/navbar.pug
 
 script(src="https://player.vimeo.com/api/player.js")
 script(type="application/javascript" src="/public/js/player.js")
+
+if defaultPlayer
+    script(type="application/javascript" src="/public/js/defaultPlayer.js" defer)
+else
+    script(type="application/javascript" src="/public/js/searchedPlayer.js" defer)
