@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/*
+ If there were more styles, I would separate them by view. and also add scss
+ ie: all player-specific css in player.css
+ */
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.view--player {
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+}
+
+

@@ -28,16 +28,16 @@ To run this website on your machine, please follow these steps:
 
 1. Clone this repository:
 
-`git clone https://github.com/xChenny/Vimeo-Q-s.git`
+    `git clone https://github.com/xChenny/Vimeo-Q-s.git`
 
 2. Install Node dependencies:
 
-`npm i`
+    `npm i`
 
 3. Run the server:
 
-`npm start`
+    `npm start`
 
 3a. Or run the development server:
 
-`npm run dev`
+    `npm run dev`

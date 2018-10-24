@@ -19,15 +19,21 @@ app.set("view engine", "pug");
 // application routes
 app.get("/", (req, res) => {
   // homepage
-  res.render("home");
+  res.render("index", {
+    view: "home"
+  });
 });
 
 app.get("/search", (req, res) => {
-  res.render("search");
+  res.render("index", {
+    view: "search"
+  });
 });
 
 app.get("/player", (req, res) => {
-  res.render("player");
+  res.render("index", {
+    view: "player"
+  });
 });
 
 app.listen(3000, () => {

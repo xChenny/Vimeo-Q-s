@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    link(rel="stylesheet", href="/public/css/style.css")
+  body
+    case view
+        when "home"
+            include layouts/home
+        when "search"
+            include layouts/search
+        when "player"
+            include layouts/player
