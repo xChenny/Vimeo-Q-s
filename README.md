@@ -22,7 +22,7 @@ To create this application, I used the following technologies
 
 *Frontend:*
 
-- Pug.js: This is the templating engine that I opted to use for this assignment. It is a really nice abstraction to HTMl that is both easy to read and write.
+- Pug.js: This is the templating engine that I opted to use for this assignment. It is a really nice abstraction to HTML that is both easy to read and write.
 - Vanilla Javascript: Normal client-side javascript as-per the assignment specifications
 
 *Backend:*
@@ -49,7 +49,7 @@ To run this website on your machine, please follow these steps:
 
     `npm start`
 
-4a. Or run the development server:
+    1. Or run the development server: 
 
     `npm run dev`
 
