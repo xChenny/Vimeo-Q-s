@@ -9,11 +9,20 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-body {
-    margin: 0;
+html, body {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 
-/* Navbar */
+body {
+    margin: 0;
+    height: 100%;
+}
+
+/***************************************** NAVBAR ***************************************/
 .navbar {
     background-color: #4D9FFF;
 }
@@ -24,18 +33,101 @@ body {
     color: white;
 }
 
-/* Player View */
+.navbar--header-link {
+    text-decoration: none;
+}
+/************************************** NAVBAR END ****************************************/
+
+/************************************ HOME VIEW START ***********************************/
+.view--home {
+    height: 100%;
+    width:100%;
+    display: grid;
+    grid-auto-columns: 1fr 2fr;
+    align-content: center;
+    background: linear-gradient(205.55deg, #0046FB -1.68%, rgba(255, 255, 255, 0) 77.03%), #1AB4E4;
+}
+
+.content--home {
+    margin: -100px 0 0 100px;
+}
+
+.button-primary {
+    width: 200px;
+    height: 40px;
+    background-color: #82E26A;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 3px;
+    margin-top: 30px;
+}
+
+.content--home .header {
+    margin: 0;
+    color: white;
+    font-size: 5em;
+}
+
+.content--home .description {
+    color: #DDDDDD;
+}
+
+/************************************ HOME VIEW END ***********************************/
+
+/************************************ SEARCH VIEW START ***********************************/
+
+.hero {
+    height: 40vh;
+    background: linear-gradient(185.11deg, #1B5BFF -5.54%, rgba(255, 255, 255, 0) 87.94%), #06B1E7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.form--search {
+    width: 100%;
+}
+.form--search .header {
+    margin: 0;
+    color: white;
+    padding: 30px;
+    font-size: 3.5em;
+}
+
+.input--search {
+    background: #FFFFFF;
+    border: 3px solid #0094FF;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 60%;
+    height: 80px;
+    font-size: 1.5em;
+    padding: 15px;
+}
+
+/************************************ SEARCH VIEW END ***********************************/
+
+/************************************ PLAYER VIEW START ***********************************/
 
 .view--player {
-    display: grid;
-    grid-template-columns: 8fr 2fr;
+    margin: 30px;
 }
+
+.content--player {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+}
+
 #player {
     position: relative;
 }
+
 #cue--background {
-    /* background: rgba(0,0,0,0); */
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.50);
+    color: white;
     position: absolute;
     top: 10px;
     left: 10px;
@@ -44,3 +136,44 @@ body {
     justify-content: center;
 }
 
+.input--cue {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    resize: none;
+    box-sizing: border-box;
+    border-radius: 9px;
+    height: 75px;
+    font-size: 1em;
+}
+.input--cue:focus {
+    /* get rid of form focus styling */
+    outline: none;
+
+    border: 2px solid #0094FF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+.button--cue-submit {
+    color: white;
+    background-color: #4D9FFF;
+    border: none;
+    border-radius: 3px;
+    width: 125px;
+    height: 30px;
+    font-size: 1em;
+}
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.cue {
+    margin: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+/************************************ PLAYER VIEW END ***********************************/

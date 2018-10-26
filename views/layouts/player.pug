@@ -1,23 +1,23 @@
 include ../partials/navbar.pug
 
 .view--player
-    .side--player
-        #player
-        if video
-            h2 video.title
-            h3 video.author
-        else
-            h2 random title
-            h3 random author
-    .side--cues
-        form#form--cue
-            input(type="text" name="cue" placeholder="Type your cue for this video at this time.")
-            button(type="submit") Submit Cue
+    .content--player
+        .side--player
+            #player
+        .side--cues
+            form#form--cue
+                textarea(class="input--cue" type="text" name="cue" placeholder="Cue text goes here")
+                .button-container
+                    button(class="button--cue-submit" type="submit") Submit Cue
+            hr
+            h3 Cues
+            p Click on cues to remove them.
+            #cues
 
 script(src="https://player.vimeo.com/api/player.js")
-script(type="application/javascript" src="/public/js/player.js")
+script(type="application/javascript" src="/public/js/player/player.js")
 
 if defaultPlayer
-    script(type="application/javascript" src="/public/js/defaultPlayer.js" defer)
+    script(type="application/javascript" src="/public/js/player/defaultPlayer.js" defer)
 else
-    script(type="application/javascript" src="/public/js/searchedPlayer.js" defer)
+    script(type="application/javascript" src="/public/js/player/searchedPlayer.js" defer)

@@ -1,6 +1,13 @@
 .view--search
-    form.form--search
-        .hero
-            h1 Search for Videos
-            input(name="search" placeholder="Search a video's title. ie \"Gangnam Style\"")
-            button(type="submit") Search
+    .hero
+        form.form--search(action="/search" method="POST")
+            h1.header Search for Videos
+            input.input--search(name="query" placeholder="Search a video's title. ie \"Yee\"")
+            br
+            button.button-primary.button--search(type="submit") Search
+    if videos
+        .results
+            each video in videos
+                a(href=video.uri)
+                    .card
+                        p= video.name
