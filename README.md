@@ -4,11 +4,9 @@ Hello! This is Andrew Chen's Vimeo Internship Coding Challenge. This application
 users to search for videos on Vimeo, create cues on specific video and store these cues
 persistently
 
-You can check out a live version of this applcation [here](https://vimeo-qs.herokuapp.com/)
+You can check out a live version of this application [here](https://vimeo-qs.herokuapp.com/)
 
 ## Features
-
-This application fulfills all of the basic requirements.
 
 **Basic Features:**
 - There is a user interface which allows users to add a cue at a specific point in the video
@@ -60,7 +58,7 @@ To run this website on your machine, please follow these steps:
     1. Set up credentials and create a `.env` file in the root with the following structure:
 
     ```
-    VIMEO_CLIENT_ID=<client_id>>
+    VIMEO_CLIENT_ID=<client_id>
     VIMEO_CLIENT_SECRET=<client_secret>
     VIMEO_ACCESS_TOKEN=<access_token>
     ```
