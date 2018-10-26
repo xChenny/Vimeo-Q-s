@@ -9,6 +9,8 @@ const bodyParser = require("body-parser");
 const static = express.static(__dirname + "/public");
 const routes = require("./routes");
 
+var port = process.env.PORT || 3000;
+
 // serve static assets
 // app.use(express.static("public"));
 app.use("/public", static);
@@ -26,6 +28,6 @@ app.set("view engine", "pug");
 
 routes(app);
 
-app.listen(3000, () => {
-  console.log("App is running on localhost:3000!");
+app.listen(port, () => {
+  console.log(`App is running on port ${port}!`);
 });
