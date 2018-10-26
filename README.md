@@ -54,3 +54,13 @@ To run this website on your machine, please follow these steps:
 4a. Or run the development server:
 
     `npm run dev`
+
+5. To use the search functionality, you need Vimeo API credentials!
+
+    1. Set up credentials and create a `.env` file in the root with the following structure:
+
+    ```
+    VIMEO_CLIENT_ID=<client_id>>
+    VIMEO_CLIENT_SECRET=<client_secret>
+    VIMEO_ACCESS_TOKEN=<access_token>
+    ```
