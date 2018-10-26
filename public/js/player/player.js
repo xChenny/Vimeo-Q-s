@@ -74,7 +74,7 @@ class Player {
   /**
    * append to the video player the closest previous cue if it is still available
    * ie: if you seek to 0:10, and there was a cue that goes from 0:08 to 0:13, then
-   * load that one
+   * load that cue
    * @param {number} currTime - the time that the video is currently on
    */
   loadClosestCue(currTime) {
@@ -127,25 +127,6 @@ class Player {
     cue.addEventListener("click", e => {
       this.deleteCue(e.target.id);
     });
-
-    // TODO: implement server-side cookie storage
-    // stringify body to send to server
-    // const body = JSON.stringify({
-    //   videoId: this.id,
-    //   timestamp: time,
-    //   cue: {
-    //     ...this.cues[time]
-    //   }
-    // });
-
-    // send cue to server for storage
-    // fetch("/player", {
-    //   method: "POST",
-    //   body,
-    //   headers: {
-    //     "Content-Type": "application/json"
-    //   }
-    // });
   }
 
   /**

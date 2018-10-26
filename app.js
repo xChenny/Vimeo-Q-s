@@ -12,8 +12,8 @@ const routes = require("./routes");
 var port = process.env.PORT || 3000;
 
 // serve static assets
-// app.use(express.static("public"));
 app.use("/public", static);
+
 // security
 app.use(helmet());
 

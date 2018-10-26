@@ -2,7 +2,6 @@
 
 Hello! This is Andrew Chen's Vimeo Internship Coding Challenge. This application allows
 users to search for videos on Vimeo, create cues on specific video and store these cues
-persistently
 
 You can check out a live version of this application [here](https://vimeo-qs.herokuapp.com/)
 
@@ -62,3 +61,9 @@ To run this website on your machine, please follow these steps:
     VIMEO_CLIENT_SECRET=<client_secret>
     VIMEO_ACCESS_TOKEN=<access_token>
     ```
+
+## Desired Features
+
+Due to limited time constraints (I started pretty late...) I only got to implement search functionality but not persistent storage
+
+While developing, I was well on my way to implementing persistent storage. At first, I wanted to use MongoDB for storage, but I thought that the latency might be an issue in performance if I were to host the application, so I opted to implement a session store. This code is in another branch, so if given the chance, I would implement that to finish the persistent storage feature.

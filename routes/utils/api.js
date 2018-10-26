@@ -1,5 +1,8 @@
+// this is a module where I can define any vimeo api related methods
+
 // create a vimeo api client
 const Vimeo = require("vimeo").Vimeo;
+
 const vimeoClient = new Vimeo(
   process.env.VIMEO_CLIENT_ID,
   process.env.VIMEO_CLIENT_SECRET,
@@ -7,7 +10,9 @@ const vimeoClient = new Vimeo(
 );
 
 /**
- * A function to get 12 videos from vimeo that relate to the search query
+ * A function that creates a Promise to get 12 videos from vimeo that relate
+ * to the search query
+ *
  * @param {string} query - search query string that we use to search videos on vimeo
  */
 const getVideos = query => {
