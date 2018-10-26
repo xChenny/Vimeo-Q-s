@@ -111,6 +111,8 @@ body {
 
 .view--search {
     background-color: #E7E7E7;
+    height: 100%;
+    text-align: center;
 }
 
 .video-link {
